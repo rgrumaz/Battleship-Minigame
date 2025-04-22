@@ -1,12 +1,37 @@
-This is the *Battleship with Java* project I made myself.
+# Battleship
+A classic two-player naval strategy game implemented in Java.
+## Overview
+This program recreates the traditional Battleship game where players strategically place their fleet on a grid and take turns firing at each other's ships. The game combines strategy, memory, and luck as you try to sink all of your opponent's ships before they sink yours.
+## Features
+- Interactive console-based gameplay
+- 10×10 game board
+- Five different ships of varying sizes:
+    - Aircraft Carrier (5 cells)
+    - Battleship (4 cells)
+    - Submarine (3 cells)
+    - Cruiser (3 cells)
+    - Destroyer (2 cells)
 
+- Input validation for ship placement
+- Turn-based gameplay with player switching
+- Hidden opponent boards
+- Visual feedback for hits and misses
 
-<div>
-<div>You will practice concepts frequently tested in technical interviews at top tech companies.</div>
+## How to Play
+1. **Setup Phase**: Each player places their ships on their board
+    - Ships can be placed horizontally or vertically
+    - Ships cannot overlap or touch each other
+    - Input coordinates in the format: `A1 A5` (start and end positions)
 
-<p>Writing games is probably one of the most exciting tasks in programming. While creating your first console game, you will learn about processing user input and handling errors.</p>
-</div><br/><br/>Learn more at <a href="https://hyperskill.org/projects/383?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=project-card">https://hyperskill.org/projects/383</a>
+2. **Battle Phase**: Players take turns firing at opponent's board
+    - Enter a coordinate to fire (e.g., `B5`)
+    - The game will display if you hit or missed
+    - The game automatically switches between players
 
-Here's the link to the project: https://hyperskill.org/projects/383
+3. **Winning**: Sink all your opponent's ships to win
 
-Check out my profile: https://hyperskill.org/profile/621293178
+## Game Symbols
+- `~` - Empty sea
+- `O` - Your ship
+- `X` - Hit ship
+- `M` - Miss
